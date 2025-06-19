@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="https://survey-form.freecodecamp.rocks">
+    <fieldset>
+    <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+    </fieldset>
+    <fieldset>
+    <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+    </fieldset>
+    <fieldset>
+    <label for="number" id="number-label">Age(optional) <input type="number" id="number" min="13" max="20" placeholder="Age"></label>
+    </fieldset>
+    <fieldset>Which option best describes your current role?
+      <select id="dropdown">
+        <option>Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend our survey to a friend?</legend>
+      <label class="radio-label" for="yes">
+      <input type="radio" id="yes" value="radioyes" name="recommend">Yes
+      </label>
+      <label class="radio-label" for="no">
+      <input type="radio" id="no" value="radiono" name="recommend">No
+      </label>
+     <label class="radio-label" for="maybe">
+      <input value="radioMaybe" type="radio" id="maybe" name="recommend">Maybe
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Ideas for improvement:</legend>
+      <label class="checkbox-label" for="idea1"><input type="checkbox" id="idea1" value="ques">More Questions</label>
+      <label class="checkbox-label" for="idea2"><input type="checkbox" id="idea2" value="options">More Options</label>
+      <label class="checkbox-label"  for="idea3"><input type="checkbox" id="idea3" value="photos">More Photos</label>
+    </fieldset>
+    <fieldset>
+      <label for="comments">Additional Comments:<textarea id="comments" placeholder="Give us your valuable feedback"></textarea></label>
+    </fieldset>
+    <fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </fieldset>
+    </form>
+  </body>
